@@ -23,6 +23,7 @@ private List<Books> getAllBooks()
 {
 return booksService.getAllBooks();
 }
+
 //creating a get mapping that retrieves the detail of a specific book
 @GetMapping("/book/{bookid}")
 private Books getBooks(@PathVariable("bookid") int bookid) 
